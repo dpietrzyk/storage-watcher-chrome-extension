@@ -8,7 +8,7 @@
     "activeTab",
     "tabs",
     "storage",
-    "http://localhost/*"
+    "<all_urls>"
   ],
   "icons": {
     "128": "icon128.png"
@@ -16,7 +16,7 @@
   "content_scripts": [
     {
       "matches": [
-        "http://localhost/*"
+        "<all_urls>"
       ],
       "js": [
         "contentScript.js"
