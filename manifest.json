@@ -1,0 +1,35 @@
+{
+  "name": "Storage Watcher",
+  "version": "0.0.1",
+  "description": "Storage Watcher",
+  "minimum_chrome_version": "10.0",
+  "content_security_policy": "script-src 'self' 'unsafe-eval' https://cdn.jsdelivr.net/npm/vue/dist/vue.js https://cdn.jsdelivr.net/npm/vuetify/dist/vuetify.js https://unpkg.com/vue-router/dist/vue-router.js https://unpkg.com/vuex; object-src 'self'",
+  "permissions": [
+    "activeTab",
+    "tabs",
+    "storage",
+    "http://localhost/*"
+  ],
+  "icons": {
+    "64": "icon64.png"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "http://localhost/*"
+      ],
+      "js": [
+        "contentScript.js"
+      ],
+      "run_at": "document_start"
+    }
+  ],
+  "devtools_page": "devtools.html",
+  "background": {
+    "scripts": [
+      "background.js"
+    ],
+    "persistent": false
+  },
+  "manifest_version": 2
+}
