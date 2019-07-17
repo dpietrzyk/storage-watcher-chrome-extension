@@ -1,6 +1,6 @@
 {
   "name": "Storage Watcher",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Storage Watcher",
   "minimum_chrome_version": "10.0",
   "content_security_policy": "script-src 'self' 'unsafe-eval' https://cdn.jsdelivr.net/npm/vue/dist/vue.js https://cdn.jsdelivr.net/npm/vuetify/dist/vuetify.js https://unpkg.com/vue-router/dist/vue-router.js https://unpkg.com/vuex; object-src 'self'",
