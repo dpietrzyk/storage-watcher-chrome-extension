@@ -1,5 +1,4 @@
 export default {
-    darkTheme: true,
     showDrawer: false,
     sync: true,
     channels: [],

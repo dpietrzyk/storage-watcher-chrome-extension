@@ -2,10 +2,6 @@ import Channel from '../class/Channel.js';
 import MUTATION from './mutation.js';
 
 export default {
-    [`${MUTATION.TOGGLE_THEME}`](state) {
-        state.darkTheme = !state.darkTheme;
-    },
-
     [`${MUTATION.TOGGLE_DRAWER}`](state) {
         state.showDrawer = !state.showDrawer;
     },

@@ -1,7 +1,6 @@
 import ClearButton from './ClearButton.js';
 import DrawerSwitcher from './DrawerSwitcher.js';
 import SearchBar from './SearchBar.js';
-import ThemeSwitcher from './ThemeSwitcher.js';
 
 const template = `
 <v-app-bar app
@@ -19,14 +18,12 @@ const template = `
     
     <SearchBar v-if="false" class="search-bar"/>
     <ClearButton/>
-    <ThemeSwitcher clipped-right/>
 </v-app-bar>
 `;
 
 export default {
     template,
     components: {
-        ThemeSwitcher,
         DrawerSwitcher,
         SearchBar,
         ClearButton,

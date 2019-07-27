@@ -1,5 +1,4 @@
 const MUTATION = Object.freeze({
-    TOGGLE_THEME: 'toggle-theme',
     TOGGLE_DRAWER: 'toggle-drawer',
     TOGGLE_SYNC: 'toggle-sync',
     ADD_CHANNEL: 'add-channel',

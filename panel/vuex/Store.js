@@ -57,7 +57,4 @@ export default class Store {
         this.#storeRef.commit(MUTATION.TOGGLE_DRAWER);
     }
 
-    static toggleTheme() {
-        this.#storeRef.commit(MUTATION.TOGGLE_THEME);
-    }
 }
