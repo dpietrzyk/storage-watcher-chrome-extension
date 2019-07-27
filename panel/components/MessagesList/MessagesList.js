@@ -7,7 +7,7 @@ const template = `
         class="pa-0">
     <template v-for="message in $store.getters.watchedMessages">
     
-        <v-list-tile class="list-item"
+        <v-list-item class="list-item"
                 :key="message.key"
                 avatar
                 @click="InspectedWindow.console.log(message.valueToDisplay)">
@@ -15,24 +15,24 @@ const template = `
             <ListRowRibbon
                     :background-color="Store.getChannelColor(message.channelName)"/>
 
-            <v-list-tile-action>
+            <v-list-item-action>
                 <v-icon v-if="message.fromHome"
                         size="16">
                     home
                 </v-icon>
-            </v-list-tile-action>
+            </v-list-item-action>
 
-            <v-list-tile-content>
+            <v-list-item-content>
                 <span class="message-list-timestamp">
                     {{ convertToTime(message.timestamp) }}
                 </span>
-                <v-list-tile-title v-text="message.valueToDisplay"></v-list-tile-title>
-            </v-list-tile-content>
+                <v-list-item-title v-text="message.valueToDisplay"></v-list-item-title>
+            </v-list-item-content>
 
-            <v-list-tile-avatar>
+            <v-list-item-avatar>
                 <!--            <img :src="item.avatar">-->
-            </v-list-tile-avatar>
-        </v-list-tile>
+            </v-list-item-avatar>
+        </v-list-item>
            
         <v-divider/>
 

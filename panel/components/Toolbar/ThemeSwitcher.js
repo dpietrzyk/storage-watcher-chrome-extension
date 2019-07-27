@@ -1,7 +1,7 @@
 import Store from '../../vuex/Store.js';
 
 const template = `
-    <v-btn flat
+    <v-btn text
            icon
            @click="Store.toggleTheme()">
         <v-icon>

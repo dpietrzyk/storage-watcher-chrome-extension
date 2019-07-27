@@ -5,7 +5,7 @@ import Toolbar from './components/Toolbar/Toolbar.js';
 import Store from './vuex/Store.js';
 
 const template = `
-    <v-app :dark="$store.state.darkTheme">
+    <v-app>
         <NavigationDrawer/>
         <Toolbar/>
         <v-content>
@@ -29,15 +29,15 @@ export default {
         Store.store = this.$store;
         this.subscribeToIncomingMessages();
 
-        for (let i = 0; i < 100; i++) {
-            this.onNewMessage(MessageGenerator.IWCEvent);
-            this.onNewMessage(MessageGenerator.IWCDefault);
-        }
-
-        setInterval(() => {
-            this.onNewMessage(MessageGenerator.IWCEvent);
-            this.onNewMessage(MessageGenerator.IWCDefault);
-        }, 1000);
+        // for (let i = 0; i < 100; i++) {
+        //     this.onNewMessage(MessageGenerator.IWCEvent);
+        //     this.onNewMessage(MessageGenerator.IWCDefault);
+        // }
+        //
+        // setInterval(() => {
+        //     this.onNewMessage(MessageGenerator.IWCEvent);
+        //     this.onNewMessage(MessageGenerator.IWCDefault);
+        // }, 1000);
 
 
     },

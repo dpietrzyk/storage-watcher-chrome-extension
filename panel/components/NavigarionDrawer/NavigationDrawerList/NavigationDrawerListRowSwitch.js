@@ -1,11 +1,11 @@
 import Channel from '../../../class/Channel.js';
 
 const template = `
-    <v-list-tile-action>
+    <v-list-item-action>
         <v-switch
                 @click.prevent=""
                 v-model="channel.watch"/>
-    </v-list-tile-action>
+    </v-list-item-action>
 `;
 
 export default {

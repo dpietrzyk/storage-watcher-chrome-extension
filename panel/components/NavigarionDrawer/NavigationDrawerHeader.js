@@ -3,15 +3,15 @@ import Store from '../../vuex/Store.js';
 const template = `
 <v-toolbar flat>
     <v-list>
-        <v-list-tile>
-            <v-list-tile-title class="title">
+        <v-list-item>
+            <v-list-item-title class="title">
                 <span>
                     Available channels
                 </span>
                     
                 <v-spacer/>
 
-                <v-btn flat
+                <v-btn text
                        icon
                        @click.stop="Store.toggleSync()">
 
@@ -24,8 +24,8 @@ const template = `
                     </v-icon>
                 
                 </v-btn>
-            </v-list-tile-title>
-        </v-list-tile>
+            </v-list-item-title>
+        </v-list-item>
     </v-list>
 </v-toolbar>
 `;

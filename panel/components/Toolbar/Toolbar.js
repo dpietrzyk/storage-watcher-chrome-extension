@@ -4,14 +4,15 @@ import SearchBar from './SearchBar.js';
 import ThemeSwitcher from './ThemeSwitcher.js';
 
 const template = `
-<v-toolbar app>
+<v-app-bar app
+    :height="64">
     <!--            <router-link to="/foo">Go to Foo</router-link>-->
     <!--            <router-link to="/bar">Go to Bar</router-link>-->
-    <v-toolbar-side-icon>
+    <v-app-bar-nav-icon>
         <DrawerSwitcher/>
-    </v-toolbar-side-icon>
+    </v-app-bar-nav-icon>
     <v-toolbar-title>
-        IWC Watcher
+        Storage Watcher
     </v-toolbar-title>
     
     <v-spacer/>
@@ -19,10 +20,8 @@ const template = `
     <SearchBar v-if="false" class="search-bar"/>
     <ClearButton/>
     <ThemeSwitcher clipped-right/>
-</v-toolbar>
+</v-app-bar>
 `;
-
-
 
 export default {
     template,
@@ -30,6 +29,6 @@ export default {
         ThemeSwitcher,
         DrawerSwitcher,
         SearchBar,
-        ClearButton
+        ClearButton,
     },
 };

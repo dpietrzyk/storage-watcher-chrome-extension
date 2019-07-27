@@ -1,9 +1,11 @@
 import App from './App.js';
-import router from './router.js';
-import store from './vuex.js';
+import vuetify from './plugins/vuetify.js';
+import router from './plugins/router.js';
+import store from './plugins/vuex.js';
 
 const app = new Vue({
     router,
     store,
+    vuetify,
     render: h => h(App),
 }).$mount('#app');

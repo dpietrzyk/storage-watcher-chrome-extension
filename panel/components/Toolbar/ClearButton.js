@@ -2,7 +2,7 @@ import Color from '../../class/Color.js';
 import Store from '../../vuex/Store.js';
 
 const template = `
-    <v-btn flat
+    <v-btn text
            icon
            @click="clearAll()">
         <v-icon>

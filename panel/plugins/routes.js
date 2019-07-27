@@ -1,4 +1,4 @@
-import HomeView from './views/HomeView.js';
+import HomeView from './../views/HomeView.js';
 
 const routes = [
     {

@@ -2,8 +2,8 @@ import Channel from '../../../class/Channel.js';
 import Store from '../../../vuex/Store.js';
 
 const template = `
-<v-list-tile-action class="custom-v-list-title-action">
-    <v-btn flat
+<v-list-item-action class="custom-v-list-title-action">
+    <v-btn text
            icon
            @click.stop="Store.toggleChannelWatch(channel.name)">
 
@@ -17,7 +17,7 @@ const template = `
         </v-icon>
 
     </v-btn>
-</v-list-tile-action>
+</v-list-item-action>
 `;
 
 export default {

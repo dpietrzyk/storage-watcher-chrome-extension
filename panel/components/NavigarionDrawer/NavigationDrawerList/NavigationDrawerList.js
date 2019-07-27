@@ -11,7 +11,7 @@ const template = `
         dense
         two-line>
 
-    <v-list-tile
+    <v-list-item
             v-for="channel of $store.getters.sortedChannels"
             :key="channel.name"
             @click="Store.toggleChannelWatch(channel.name)">
@@ -29,7 +29,7 @@ const template = `
 
         <v-spacer/>
 
-    </v-list-tile>
+    </v-list-item>
 
 </transition-group>
 `;
