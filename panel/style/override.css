@@ -1,0 +1,13 @@
+.v-toolbar .v-input.search-bar {
+    margin: 0 1rem;
+}
+
+.v-list-item__title.title {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.v-list-item__action.custom-v-list-title-action {
+    min-width: 40px;
+}

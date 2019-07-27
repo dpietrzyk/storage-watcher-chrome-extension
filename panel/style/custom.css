@@ -1,0 +1,19 @@
+.list-row-ribbon {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 5px;
+    height: 100%;
+}
+
+.flip-list-move {
+    transition: transform 1s;
+}
+
+.message-list-timestamp {
+    position: absolute;
+    color: #aaa;
+    top: 5px;
+    right: 5px;
+    font-size: 12px;
+}
