@@ -29,20 +29,16 @@ export default {
         Store.store = this.$store;
         this.subscribeToIncomingMessages();
 
-        // for (let i = 0; i < 100; i++) {
-        //     this.onNewMessage(MessageGenerator.IWCEvent);
-        //     this.onNewMessage(MessageGenerator.IWCDefault);
-        // }
-        //
-        // setInterval(() => {
-        //     this.onNewMessage(MessageGenerator.IWCEvent);
-        //     this.onNewMessage(MessageGenerator.IWCDefault);
-        // }, 1000);
+        for (let i = 0; i < 100; i++) {
+            this.onNewMessage(MessageGenerator.IWCEvent);
+            this.onNewMessage(MessageGenerator.IWCDefault);
+        }
 
+        setInterval(() => {
+            this.onNewMessage(MessageGenerator.IWCEvent);
+            this.onNewMessage(MessageGenerator.IWCDefault);
+        }, 1000);
 
-    },
-
-    mounted() {
 
     },
     methods: {
